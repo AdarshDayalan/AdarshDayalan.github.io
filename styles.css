@@ -5,16 +5,9 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-/* 
-nav {
-	background: #1b1b1b;
-	width: 100%;
-	margin: -10px;
-	padding: 10px 0;
-} */
 
 nav .menu {
-	max-width: 100%;
+	width: 100%;
 	margin: auto;
 	display: flex;
 	align-items: center;
@@ -69,32 +62,82 @@ nav .menu {
 	display: inline-block;
 	text-align: center;
 	/* background-color: red; */
-	background-position-x: center;
+	/* background-position-x: center; */
 	background-image: url("Images/head_clip.png");
 	background-size:contain;
 	background-repeat: no-repeat;
 }
 
-/* .container div{
-	width: 50%;
+.container div{
+	width: 66%;
 	height: 100px;
-	 background: red;
-	margin-left: 50%;
+	margin-left: 33%;
 	text-align: center;
-} */
+}
 
 .container h1{
 	margin: 10vh;
-	color: white;
+	color: black;
 	font:italic;
 	font-size: 10vh;
 }
+
+.container p1 {
+	display: inline-block;
+	color: black;
+	font:italic;
+	font-size: 5vh;
+}
+
+.fade-in {
+	animation: fadeIn ease 2s;
+	-webkit-animation: fadeIn ease 2s;
+	-moz-animation: fadeIn ease 2s;
+	-o-animation: fadeIn ease 2s;
+	-ms-animation: fadeIn ease 2s;
+  }
+
+  @keyframes fadeIn {
+	0% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:1;
+	}
+  }
   
-  /* Centered text */
-  /* .centered {
-	position: absolute;
-	font-size: xx-large;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  } */
+  @-moz-keyframes fadeIn {
+	0% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:1;
+	}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:1;
+	}
+  }
+  
+  @-o-keyframes fadeIn {
+	0% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:1;
+	}
+  }
+  
+  @-ms-keyframes fadeIn {
+	0% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:1;
+ 	 }
+  }
