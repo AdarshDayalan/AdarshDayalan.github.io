@@ -149,7 +149,28 @@ body {
 }
 
 @media(max-width:500px) {
-	#nav-bar ul {
+	/* #nav-bar ul {
 		background-color: red;
+	} */
+
+	#content div {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top:25%;
+		padding: 10px;
+		overflow: hidden;
+		/* background-color: red; */
+		box-sizing: border-box;
+		word-wrap: break-word;
 	}
+
+	#content div p{
+		font-size: none;
+	}
+
+	.content-bold {
+		font-size: 60px;
+	}
+
 }
