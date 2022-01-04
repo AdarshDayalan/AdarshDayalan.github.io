@@ -7,18 +7,19 @@
   </head>
   <body onmousemove="coordinate(event)" class="light-theme">
 
+    <div id="nav-background"></div>
+
     <div id="nav-bar">
       <ul>
+        <input id="nav-logo" type="image" src="Images/logo_crop_grey.png" alt="logo" height="25vh">
         <a href="#">About</a>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
-        <input id="dark-btn" type="image" src="png images/dark-mode.png" alt="Submit" height="12vh" onclick="ToggleDark()">
+        <input id="dark-btn" type="image" src="png images/btn-grey.png" alt="Submit" height="12vh" onclick="ToggleDark()">
       </ul>
     </div>
 
-    <div id="nav-background"></div>
-
-    <div id="content">
+    <div id="landing">
       <img id="img0" src="png images/circle1.png" alt="triangle1">
       <img id="img1" src="png images/triangle1.png" alt="arrow1">
       <img id="img2" src="png images/squiggle1.png" alt="arrow1">
@@ -29,13 +30,41 @@
       <img id="img7" src="png images/triangle5.png" alt="x1">
       <img id="img8" src="png images/circle2.png" alt="triangle2">
 
-      <div>
-        <h1 class = "content-bold" id="content-greeting">Hey</h1>
-        <h1 class = "content-bold" id="content-name">I'm Adarsh.</h1>
-        <p>I'm an aspiring software developer with leadership and project management 
-          experience seeking opportunities to develop and apply skills in the field 
-          of Computer Science and AI.</p>
+      <div class="center">
+        <h1 class = "landing-bold" id="landing-greeting">Hey</h1>
+        <h1 class = "landing-bold" id="landing-name">I'm Adarsh.</h1>
+        <p>I'm an aspiring <span class="accent-text">Software Developer</span> with a focused interest in applying my
+           <span class="accent-text">CS and AI</span> skills to bridge humans and technology for an innovative future.</p>
+        <p>Here is more <a href="#" class="accent-text">about me</a></p>
       </div>
+      <a id="down-arw" href="#projects-wrap"><img id="down-arw-img" src="png images/arrow-down-grey.png" alt="down"></a>
+    </div>
+
+    <div class="content-wrap">
+      <div id="projects-wrap">
+        <div class="projects">
+          <a href="#">
+            <img src="Images/head_clip.png">
+          </a>
+          <a href="#">
+            <img src="Images/head_clip.png">
+          </a>
+          <a href="#">
+            <img src="Images/head_clip.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a id="footer-logo" href="#"><img id="footer-img"
+         src="Images/logo_crop_white.png" alt="logo" width="50px"></a>
+      <ul>
+        <a href="#">Github</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Contact</a>
+        <a href="#">Resume</a>
+      </ul>
+      <p>Made by Adarsh Dayalan</p>
     </div>
     <script src="index.js"></script>
   </body>
