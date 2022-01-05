@@ -11,11 +11,14 @@
 
     <div id="nav-bar">
       <ul>
-        <input id="nav-logo" type="image" src="Images/logo_crop_grey.png" alt="logo" height="25vh">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-        <input id="dark-btn" type="image" src="png images/btn-grey.png" alt="Submit" height="12vh" onclick="ToggleDark()">
+        <input id="nav-logo" type="image" src="Images/logo_crop_grey.png" alt="logo" 
+        height="25vh">
+        <a id="about" href="#">About</a>
+        <a id="projects" href="#">Projects</a>
+        <a id="contact" href="#">Contact</a>
+        <input id="dark-btn" type="image" src="png images/btn-grey.png" alt="Submit"
+         height="12vh" onclick="ToggleDark()">
+        <hr />
       </ul>
     </div>
 
@@ -33,28 +36,57 @@
       <div class="center">
         <h1 class = "landing-bold" id="landing-greeting">Hey</h1>
         <h1 class = "landing-bold" id="landing-name">I'm Adarsh.</h1>
-        <p>I'm an aspiring <span class="accent-text">Software Developer</span> with a focused interest in applying my
-           <span class="accent-text">CS and AI</span> skills to bridge humans and technology for an innovative future.</p>
+        <p>I'm an aspiring <span class="accent-text">Software Developer</span> with
+           a focused interest in applying my
+           <span class="accent-text">CS and AI</span> skills to bridge humans and 
+           technology for an innovative future.</p>
         <p>Here is more <a href="#" class="accent-text">about me</a></p>
       </div>
-      <a id="down-arw" href="#projects-wrap"><img id="down-arw-img" src="png images/arrow-down-grey.png" alt="down"></a>
+      <a id="down-arw" href="#down-arw"><img id="down-arw-img" src="png images/arrow-down-grey.png"
+         alt="down"></a>
     </div>
 
     <div class="content-wrap">
+      <h id="project-heading">Here are some of my <span class="accent-text">projects</span></h>
       <div id="projects-wrap">
         <div class="projects">
           <a href="#">
-            <img src="Images/head_clip.png">
+            <img src="Images/hand-wave2.jpg">
+            <div id="img-description">
+              <h>Wave</h>
+              <p1>Computer Hand Gesture Control</p1>
+              <p>I can control my laptop with a wave of my hand. Bah dum tssss</p>
+            </div>
           </a>
           <a href="#">
-            <img src="Images/head_clip.png">
+              <img src="Images/stock-bot.jpg">
+              <div id="img-description">
+                <h>Stock Bot</h>
+                <p1>Auto-trading python bot with TDAmeritrade</p1>
+                <p> Developed python software to connect desired trading alerts with my brokerage api to 
+                  autonomously buy/sell stocks</p>
+                <p> It has successfully executed 150+ trades and is still being used by my family.</p>
+              </div>
           </a>
           <a href="#">
-            <img src="Images/head_clip.png">
+            <img src="Images/pushup.jpg">
+            <div id="img-description">
+              <h>TrainAI</h>
+              <p1>AI-powered personal trainer</p1>
+              <p>- Led a group to create an AI that detects and labels a variety of workouts as a 
+                mini personal trainer, checking form and counting repetitions through a camera feed. </p>
+              <p>-Trained the model on over 1.5 million data points to identify 4 full-body
+                 workouts and poses with up to 86% accuracy.</p>
+              <p></p>
+            </div>
+          </a>
+          <a href="#">
+            <img src="Images/face-recognition.jpg">
           </a>
         </div>
       </div>
     </div>
+
     <div id="footer">
       <a id="footer-logo" href="#"><img id="footer-img"
          src="Images/logo_crop_white.png" alt="logo" width="50px"></a>
@@ -66,6 +98,8 @@
       </ul>
       <p>Made by Adarsh Dayalan</p>
     </div>
+
     <script src="index.js"></script>
+
   </body>
 </html>
