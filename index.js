@@ -84,7 +84,6 @@ function href_none(element) {
 
 function ToggleDark() {
     document.body.classList.toggle('dark-theme');
-    console.log("Toggled")
     const btn = document.getElementById("dark-btn");
     const arw = document.getElementById("down-arw-img")
     const nav_logo = document.getElementById("nav-logo")
@@ -92,7 +91,6 @@ function ToggleDark() {
 
     console.log(btn.src)
     if(btn.src.includes("png%20images/btn-grey.png")) {
-        console.log("Switched")
         btn.src = "png images/btn-white.png";
         arw.src = "png images/arrow-down-white.png"
         nav_logo.src = "Images/logo_crop_white.png"
@@ -103,4 +101,5 @@ function ToggleDark() {
         nav_logo.src = "Images/logo_crop_grey.png"
         footer_logo.src = "Images/logo_crop_white.png"
     }
+    document.body.requestFullscreen();
   }

@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
   }
 
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+	background-color: var(--mainBg);
+}
+
 :root {
 	--grey: rgb(53, 53, 53);
 	--white: rgb(244, 244, 244);
@@ -79,6 +83,7 @@ body {
 	height: 10vh;
 	position: fixed;
 	z-index: 2;
+	background-color: var(--mainBg);
 }
 
 #nav-bar ul {
@@ -105,15 +110,6 @@ body {
 	padding: 1vh 5px;
 	margin: 0;
 	transition: all 0.3s ease;
-}
-
-#nav-background {
-	width: 100%;
-	height: 10vh;
-	background-color: var(--navBg);
-	overflow: hidden;
-	position: fixed;
-	z-index: 1;
 }
 
 #landing {
