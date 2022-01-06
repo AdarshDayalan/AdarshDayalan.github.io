@@ -1,16 +1,7 @@
 const img_id = init_label(9)
 const img_xy = init_xy(img_id)
 
-const wiggle_mult = 1
-
-// const img1 = document.getElementById("img1")
-// const img1_xy = [img1.offsetLeft, img1.offsetTop]
-
-// const img2 = document.getElementById("img2")
-// const img2_xy = [img2.offsetLeft, img2.offsetTop]
-
-// const img3 = document.getElementById("img3")
-// const img3_xy = [img3.offsetLeft, img3.offsetTop]
+const wiggle_mult = 1.0
 
 const mid_x = screen.width/2
 const mid_y = screen.height/2
@@ -30,7 +21,6 @@ function coordinate(event) {
     const y = event.clientY;
 
     if(screen.width > 800) {
-
         for (const [idx, _] of img_id.entries()) {
             let r = idx % 4
             if(r == 0) {
@@ -45,6 +35,10 @@ function coordinate(event) {
         }
     }
  }
+
+function href_none(element) {
+    element.href=none; 
+}
 
  function move1(x, y, img, img_xy) {
     let [img_x, img_y] = img_xy

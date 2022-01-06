@@ -10,15 +10,14 @@
     <div id="nav-background"></div>
 
     <div id="nav-bar">
-      <ul>
-        <input id="nav-logo" type="image" src="Images/logo_crop_grey.png" alt="logo" 
-        height="25vh">
-        <a id="about" href="#">About</a>
-        <a id="projects" href="#">Projects</a>
-        <a id="contact" href="#">Contact</a>
+      <ul class="underline-animation">
+        <input onClick="window.reload();" id="nav-logo" type="image" src="Images/logo_crop_grey.png" alt="logo" 
+        height="20vh">
+        <a href="#">About</a>
+        <a href="#down-arw">Projects</a>
+        <a href="#">Contact</a>
         <input id="dark-btn" type="image" src="png images/btn-grey.png" alt="Submit"
          height="12vh" onclick="ToggleDark()">
-        <hr />
       </ul>
     </div>
 
@@ -41,6 +40,17 @@
            <span class="accent-text">CS and AI</span> skills to bridge humans and 
            technology for an innovative future.</p>
         <p>Here is more <a href="#" class="accent-text">about me</a></p>
+        <ul id="mini-imgs">
+          <a href="https://www.linkedin.com/in/adarsh-dayalan-aa2b3b1a2/" target="_blank">
+            <img src="Images/linkedIn.png">
+          </a> 
+          <a href="https://github.com/AdarshDayalan" target="_blank">
+            <img src="Images/github.png">
+          </a> 
+          <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/14iV9wlMAqkpQX3TcZwEq6LFfoEyiOSiQnyj6Kd0mGIM/export?format=pdf" target="_blank">
+            <img src="Images/resume.png" target="_blank">
+          </a> 
+        </ul>
       </div>
       <a id="down-arw" href="#down-arw"><img id="down-arw-img" src="png images/arrow-down-grey.png"
          alt="down"></a>
@@ -50,38 +60,54 @@
       <h id="project-heading">Here are some of my <span class="accent-text">projects</span></h>
       <div id="projects-wrap">
         <div class="projects">
-          <a href="#">
+          <a id="Wave" href="#">
             <img src="Images/hand-wave2.jpg">
             <div id="img-description">
               <h>Wave</h>
-              <p1>Computer Hand Gesture Control</p1>
-              <p>I can control my laptop with a wave of my hand. Bah dum tssss</p>
+              <p1>Computer Hand-Gesture Control</p1>
+              <ul>
+                <li> Custom Machine Learning Model with Computer Vision</li>
+                <li>Recognizes and classifies programmable hand gestures</li>
+                <li>Can switch tabs, close windows, control the mouse, scroll, click, and more</li>
+              </ul>
             </div>
           </a>
-          <a href="#">
+          <a id="Stock-Bot"href="#">
               <img src="Images/stock-bot.jpg">
               <div id="img-description">
-                <h>Stock Bot</h>
+                <h>AutoTrade</h>
                 <p1>Auto-trading python bot with TDAmeritrade</p1>
-                <p> Developed python software to connect desired trading alerts with my brokerage api to 
-                  autonomously buy/sell stocks</p>
-                <p> It has successfully executed 150+ trades and is still being used by my family.</p>
+                <ul>
+                  <li>Connects TradingView alerts to my brokerage account</li>
+                  <li>Autonomously buys/sells stocks based on these alerts</li>
+                  <li>Succesfully executed 150+ trades and is still used by my family</li>
+                </ul>
               </div>
           </a>
-          <a href="#">
+          <a id="Workout-Trk" href="#">
             <img src="Images/pushup.jpg">
             <div id="img-description">
               <h>TrainAI</h>
               <p1>AI-powered personal trainer</p1>
-              <p>- Led a group to create an AI that detects and labels a variety of workouts as a 
-                mini personal trainer, checking form and counting repetitions through a camera feed. </p>
-              <p>-Trained the model on over 1.5 million data points to identify 4 full-body
-                 workouts and poses with up to 86% accuracy.</p>
-              <p></p>
+              <ul>
+                <li>Detects and labels a variety of workouts through a camera feed</li>
+                <li>Trained on over 1.5 million data points</li>
+                <li>Identifys 4 full-body workouts and poses with up to 86% accuracy.</li>
+                <li>Counts repetition, checks form, and gives responsive feedback </li>
+              </ul>
             </div>
           </a>
-          <a href="#">
+          <a id = "FaceLock" href="#">
             <img src="Images/face-recognition.jpg">
+            <div id="img-description">
+              <h>FaceLock</h>
+              <p1>Facial Recognition Door Lock</p1>
+              <ul>
+                <li>Prototype an automated smart door lock</li>
+                <li>Controlled through mobile app or face recognition from security camera</li>
+                <li>Automatically unlocks and greets homeowner if face is recognized.</li>
+              </ul>
+            </div>
           </a>
         </div>
       </div>
@@ -90,13 +116,21 @@
     <div id="footer">
       <a id="footer-logo" href="#"><img id="footer-img"
          src="Images/logo_crop_white.png" alt="logo" width="50px"></a>
-      <ul>
-        <a href="#">Github</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Contact</a>
-        <a href="#">Resume</a>
+      <ul class="underline-animation">
+        <a href="https://www.linkedin.com/in/adarsh-dayalan-aa2b3b1a2/" target="_blank">
+            LinkedIn
+          </a> 
+          <a href="https://github.com/AdarshDayalan" target="_blank">
+            Github
+          </a>
+          <a href="">Contact</a> 
+          <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/14iV9wlMAqkpQX3TcZwEq6LFfoEyiOSiQnyj6Kd0mGIM/export?format=pdf" target="_blank">
+            Resume
+          </a>
       </ul>
-      <p>Made by Adarsh Dayalan</p>
+      <ul class="underline-animation">
+        <a >Made by Adarsh Dayalan</a>
+      </ul>
     </div>
 
     <script src="index.js"></script>
