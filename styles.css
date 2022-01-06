@@ -359,7 +359,7 @@ body {
 	font-size: 15px;
 }
 
-.projects a:hover #img-description, .projects a:active #img-description {
+.projects a:hover #img-description{
 	visibility: visible;
 	opacity: 1;
 	animation: 0.4s slide-up;
@@ -370,7 +370,7 @@ body {
 	-webkit-filter: brightness(30%);
 } */
 
-.projects a:hover img, .projects a:active .img {
+.projects a:hover img{
 	filter: blur(5px) brightness(30%);
 }
 
