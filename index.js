@@ -101,5 +101,4 @@ function ToggleDark() {
         nav_logo.src = "Images/logo_crop_grey.png"
         footer_logo.src = "Images/logo_crop_white.png"
     }
-    document.body.requestFullscreen();
   }

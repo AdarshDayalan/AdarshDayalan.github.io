@@ -2,10 +2,6 @@ html {
 	scroll-behavior: smooth;
   }
 
-*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
-	background-color: var(--mainBg);
-}
-
 :root {
 	--grey: rgb(53, 53, 53);
 	--white: rgb(244, 244, 244);
