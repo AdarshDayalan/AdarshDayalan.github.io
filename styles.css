@@ -232,6 +232,7 @@ body {
 
 #pop-up {
 	position:relative;
+	visibility: hidden;
 	width: 70%;
 	top: 50vh;
 	left: 50%;
