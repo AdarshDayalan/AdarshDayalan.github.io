@@ -230,6 +230,36 @@ body {
 	position: relative;
 }
 
+#pop-up {
+	position:relative;
+	width: 70%;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: red;
+}
+
+#pop-up div {
+	display: inline-block;
+	width:50%;
+	box-sizing: border-box;
+	background-color: var(--accent);
+	text-align:center;
+}
+
+#pop-up div p{
+	width: 100%;
+}
+
+#about-me{
+	background-color: var(--white);
+}
+
+#contact{
+	background-color: var(--grey);
+	float: right;
+}
+
 #down-arw {
 	position: absolute;
 	top: 95vh;
