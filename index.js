@@ -121,7 +121,6 @@ function reset() {
      for (let step = 0; step < n; step++) {
          arr.push(document.getElementById(("img"+step)))
      }
-     console.log(arr)
      return arr
  }
 
