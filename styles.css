@@ -318,10 +318,6 @@ body {
 	padding: 0;
 }
 
-.constant-underline:after {
-	transition-delay: 10s;
-}
-
 .constant-underline a:after {
 	content: '';
 	position: absolute;
@@ -335,7 +331,7 @@ body {
 	transition: transform 0.25s ease-out;
 	transition-delay: 10s;
 
-	animation: constant-underline 5s infinite;
+	animation: constant-underline 2s infinite;
 }
 
 #about-me ul a{
