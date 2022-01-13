@@ -6,6 +6,8 @@ const wiggle_mult = 1.0
 const mid_x = screen.width/2
 const mid_y = screen.height/2
 
+let pop = false
+
 function vh(v) {
     var h = document.documentElement.clientHeight;
     return (v / h) * 100;
@@ -36,8 +38,58 @@ function coordinate(event) {
     }
  }
 
-function href_none(element) {
-    element.href=none; 
+function show_pop_up() {
+    pop = true
+
+    const landing_content = document.getElementById("center");
+    landing_content.style.visibility = "hidden";
+    landing_content.style.opacity = "0";
+
+    const nav = document.getElementById("nav-bar");
+    nav.style.visibility = "hidden";
+    nav.style.opacity = "0";
+
+    const arw = document.getElementById("down-arw");
+    arw.style.visibility = "hidden";
+    arw.style.opacity = "0";
+
+    document.body.style.overflowY = "hidden";
+
+    landing_content.ontransitionend = () => {
+        if(pop) {
+            const pop_up = document.getElementById("pop-up");
+            pop_up.style.visibility = "visible";
+            pop_up.style.opacity = "1";
+        }
+    }
+}
+
+function reset() {
+
+    pop = false
+    
+    const pop_up = document.getElementById("pop-up");
+    pop_up.style.visibility = "hidden";
+    pop_up.style.opacity = "0";
+
+    
+    pop_up.ontransitionend = () => {
+        if(!pop) {
+            const landing_content = document.getElementById("center");
+            landing_content.style.visibility = "visible";
+            landing_content.style.opacity = "1";
+
+            const nav = document.getElementById("nav-bar");
+            nav.style.visibility = "visible";
+            nav.style.opacity = "1";
+
+            const arw = document.getElementById("down-arw");
+            arw.style.visibility = "visible";
+            arw.style.opacity = "1";
+
+            document.body.style.overflowY = "visible";
+        }
+    };
 }
 
  function move1(x, y, img, img_xy) {

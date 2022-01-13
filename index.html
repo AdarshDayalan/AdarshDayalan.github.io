@@ -11,24 +11,57 @@
       <ul class="underline-animation">
         <input onClick="window.reload();" id="nav-logo" type="image" src="Images/logo_crop_grey.png" alt="logo" 
         height="20vh">
-        <a href="#">About</a>
+        <a id="about" href="#" onclick="show_pop_up()">About</a>
         <a href="#down-arw">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#" onclick="show_pop_up()">Contact </a>
         <input id="dark-btn" type="image" src="png images/btn-grey.png" alt="Submit"
          height="12vh" onclick="ToggleDark()">
       </ul>
     </div>
 
-    <div id="pop-up">
-      <div id="about-me">
-        <p>About</p>
-      </div>
-      <div id="contact">
-        <p>Contact</p>
+    <div id="pop-up" class="panel">
+      <input id="exit" type="image" src="Images/exit.png" alt="Exit" onclick="reset()">
+      <div id="about-me" class="constant-underline">
+        <h2>Here is more about me</h2>
+        <h5>CS Undergrad @ UIUC</h5>
+        <p>I'm an aspiring <span class="accent-text">Software Developer</span> with
+          a focused interest in applying my
+          <span class="accent-text">CS</span> and <span class="accent-text">AI
+          </span> skills to bridge humans and technology for an innovative future.
+          <br>
+          I have been intersecting AI with <span class="accent-text">robotics</span> and 
+            <span class="accent-text">automation</span> for 4+ years through various 
+           <a href="#down-arw" onclick="reset()">projects</a> and organizations with experienced software engineers</p>
+          <h6>Learn More Below</h6>
+          <ul id="mini-imgs">
+            <a href="https://www.linkedin.com/in/adarsh-dayalan-aa2b3b1a2/" target="_blank">
+              <img src="Images/linkedIn.png">
+            </a> 
+            <a href="https://github.com/AdarshDayalan" target="_blank">
+              <img src="Images/github.png">
+            </a> 
+            <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/14iV9wlMAqkpQX3TcZwEq6LFfoEyiOSiQnyj6Kd0mGIM/export?format=pdf" target="_blank">
+              <img src="Images/resume.png" target="_blank">
+            </a> 
+          </ul>
+      </div><!--
+      --><div id="contact-me">
+        <h1>Let's Talk!</h1>
+        <h5>I'm currently looking for new opportunities</h5>
+        <!-- <form class="form-submit"action="https://formsubmit.co/your@email.com" method="POST">
+
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="message" placeholder="Message" required>
+          <button type="submit">Send</button>
+        </form> -->
+        <h3> <span class="accent-text">Email:</span> dayalan2@illinois.edu
+        <!-- <br> Phone: 224-440-9977</h2> -->
+        </h3>
       </div>
     </div>
 
-    <div id="landing">
+    <div id="landing" onclick="reset()">
       <img id="img0" src="png images/circle1.png" alt="triangle1">
       <img id="img1" src="png images/triangle1.png" alt="arrow1">
       <img id="img2" src="png images/squiggle1.png" alt="arrow1">
@@ -39,14 +72,14 @@
       <img id="img7" src="png images/triangle5.png" alt="x1">
       <img id="img8" src="png images/circle2.png" alt="triangle2">
 
-      <div class="center">
+      <div id="center">
         <h1 class = "landing-bold" id="landing-greeting">Hey</h1>
         <h1 class = "landing-bold" id="landing-name">I'm Adarsh.</h1>
         <p>I'm an aspiring <span class="accent-text">Software Developer</span> with
-           a focused interest in applying my
-           <span class="accent-text">CS and AI</span> skills to bridge humans and 
-           technology for an innovative future.</p>
-        <p>Here is more <a href="#" class="accent-text">about me</a></p>
+          a focused interest in applying my
+          <span class="accent-text">CS</span> and <span class="accent-text">AI</span> skills to bridge humans and 
+          technology for an innovative future.</p>
+        <p>Here is more <span class="accent-text">about me</span></p>
         <ul id="mini-imgs">
           <a href="https://www.linkedin.com/in/adarsh-dayalan-aa2b3b1a2/" target="_blank">
             <img src="Images/linkedIn.png">
@@ -130,7 +163,7 @@
           <a href="https://github.com/AdarshDayalan" target="_blank">
             Github
           </a>
-          <a href="">Contact</a> 
+          <a href="#" onclick="show_pop_up()">Contact</a> 
           <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/14iV9wlMAqkpQX3TcZwEq6LFfoEyiOSiQnyj6Kd0mGIM/export?format=pdf" target="_blank">
             Resume
           </a>
