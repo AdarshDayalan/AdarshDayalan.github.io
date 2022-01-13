@@ -417,20 +417,19 @@ body {
 	position: relative;
 	display:inline-block;
 	padding: 0;
-	margin: 0;
+	margin: 5vh 0;
 	transition: all 0.4s ease;
 }
 
 .projects a img {
 	position: relative;
 	width: 60vw;
-	height: 70vh;
+	height: 60vh;
 	object-fit: cover;
   	display: inline-block;
 	left: 50%;
 	-webkit-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
-	margin: 5vh 0;
 	filter: blur(0px) brightness(100%);
 	transition: all 0.4s ease;
 	border-radius: 5vh;
@@ -482,6 +481,10 @@ body {
 #img-description ul li{
 	margin: 20px 0;
 	font-size: 15px;
+}
+
+#img-description{
+	pointer-events: none;
 }
 
 .projects a:hover #img-description{
