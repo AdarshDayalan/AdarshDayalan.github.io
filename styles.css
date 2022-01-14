@@ -1,6 +1,11 @@
 html {
 	scroll-behavior: smooth;
-  }
+}
+
+* {
+	font-family: 'Montserrat';
+	/* font-family: sans-serif; */
+}
 
 :root {
 	--grey: rgb(53, 53, 53);
@@ -97,10 +102,8 @@ body {
 }
 
 #nav-bar ul a {
-	font-family: sans-serif;
 	text-decoration: none;
-	/* color: white; */
-	color: var(--navColor);
+	color: var(--text);
 	font-size: 15px;
 	font-weight: 500;
 	padding: 1vh 5px;
@@ -129,7 +132,6 @@ body {
 }
 
 #landing div p{
-	font-family: sans-serif;
 	font-size: 1.5vw;
 	margin: 0;
 	color: var(--text);
@@ -146,7 +148,6 @@ body {
 }
 
 .landing-bold {
-	font-family: sans-serif;
 	font-size: 6vw;
 	margin: 0;
 }
@@ -284,7 +285,6 @@ body {
 }
 
 #pop-up p{
-	font-family: sans-serif;
 	font-size: 15px;
 	margin: 10%, 5%;
 	padding-right: 50%;
@@ -292,7 +292,6 @@ body {
 }
 
 #pop-up div *{
-	font-family: sans-serif;
 	position: relative;
 	width: 100%;
 	text-align: left;
@@ -360,7 +359,6 @@ body {
 	border: none;
 	padding: 1.5rem 3rem;
 	margin: 10vw 0;
-	font-family: inherit;
 	text-align: center;
 }
 
@@ -390,7 +388,6 @@ body {
 #project-heading{
 	color: var(--text);
 	position: relative;
-	font-family: sans-serif;
 	font-weight:700;
 	font-size: 40px;
 	background-color: var(--mainBg);
@@ -454,7 +451,6 @@ body {
 	visibility: hidden;
 	text-align: left;
 	box-sizing: border-box;
-	font-family: sans-serif;
 }
 
 #img-description h{
@@ -675,7 +671,6 @@ body {
 	}
 
 	#pop-up p{
-		font-family: sans-serif;
 		font-size: 15px;
 		margin: 10%, 5%;
 		padding-right: 50%;
