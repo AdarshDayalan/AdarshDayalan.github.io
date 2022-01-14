@@ -35,6 +35,9 @@ function coordinate(event) {
                 move1(x,y,img_id[idx], img_xy[idx]);
             }
         }
+    } else {
+        const exit = document.getElementById("exit");
+        exit.src = "Images/exit_dark.png";
     }
  }
 

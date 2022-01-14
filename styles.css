@@ -657,7 +657,9 @@ body {
 	}
 
 	#pop-up {
-		flex-direction: column-reverse;
+		flex-direction: column;
+		width: 85%;
+		height: 90%;
 	}
 
 	#pop-up div {
