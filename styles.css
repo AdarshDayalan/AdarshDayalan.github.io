@@ -657,7 +657,7 @@ body {
 	}
 
 	#pop-up {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	#pop-up div {
@@ -681,12 +681,18 @@ body {
 	}
 
 	#img-description h{
-		font-size: 5vw;
+		font-size: 25px;
 		font-weight: 700;
 	}
 
-	#img-description p{
-		font-size: 3vw;
+	#img-description ul{
+		margin: 0;
+		padding: 0 10px;
+	}
+
+	#img-description ul li{
+		font-size: 15px;
+		line-height: 17px;
 	}
 
 
